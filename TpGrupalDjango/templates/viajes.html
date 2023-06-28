@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes</title>
     <link rel="icon" type="image/x-icon" href="img/travel.ico">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/boton.css">
-    <link rel="stylesheet" href="css/moveralcarrito.css"
-        
+    {% load static %}
+          <link rel="stylesheet" href="{% static 'css/estilo.css' %}" >
+          <link rel="stylesheet" href="{% static 'css/boton.css' %}" >
+          <link rel="stylesheet" href="{% static 'css/moveralcarrito.css' %}">  
+          
+    
 </head>
 <body background="img/Fondo.jpg">
   <header>
@@ -126,11 +127,13 @@
               </div> 
               <br>
                 <section class="carrusel">
-                  <img src="img/Viajes/Cataratasdeliguazu/cataratasiguazu1.jpg">        
-                  <img src="img/Viajes/Cataratasdeliguazu/cataratasiguazu2.jpg">
-                  <img src="img/Viajes/Cataratasdeliguazu/cataratasiguazu3.jpg">
-                  <img src="img/Viajes/Cataratasdeliguazu/cataratasiguazu4.jpg">
-                  <img src="img/Viajes/Cataratasdeliguazu/cataratasiguazu5.jpg">  
+                  {% load static %}
+                   <img src="{% static 'img/Viajes/Cataratasdeliguazu/cataratasiguazu1.jpg' %}" alt="My image">
+                   <img src="{% static 'img/Viajes/Cataratasdeliguazu/cataratasiguazu2.jpg' %}" alt="My image">
+                   <img src="{% static 'img/Viajes/Cataratasdeliguazu/cataratasiguazu3.jpg' %}" alt="My image">
+                   <img src="{% static 'img/Viajes/Cataratasdeliguazu/cataratasiguazu4.jpg' %}" alt="My image">
+                   <img src="{% static 'img/Viajes/Cataratasdeliguazu/cataratasiguazu5.jpg' %}" alt="My image">
+                  
                 </section>   
           </div>
           <div class="separador"></div>
@@ -179,11 +182,12 @@
               <br>  
                 
         <section class="carrusel">
-              <img src="img/Viajes/Mendoza/mendoza1.jpg">        
-              <img src="img/Viajes/Mendoza/mendoza2.jpg">
-              <img src="img/Viajes/Mendoza/mendoza3.jpg">
-              <img src="img/Viajes/Mendoza/mendoza4.jpg">
-              <img src="img/Viajes/Mendoza/mendoza5.jpg">
+          {% load static %}
+          <img src="{% static 'img/Viajes/Mendoza/mendoza1.jpg' %}" alt="My image">
+          <img src="{% static 'img/Viajes/Mendoza/mendoza2.jpg' %}" alt="My image">
+          <img src="{% static 'img/Viajes/Mendoza/mendoza3.jpg' %}" alt="My image">
+          <img src="{% static 'img/Viajes/Mendoza/mendoza4.jpg' %}" alt="My image">
+          <img src="{% static 'img/Viajes/Mendoza/mendoza5.jpg' %}" alt="My image">
           </section> 
         </div>    
               

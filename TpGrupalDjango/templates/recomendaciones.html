@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/travel.ico">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo.css">
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="/img/travel.ico">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}" >
     <style>
         .contorno-p {
           font-size: 16px;
@@ -28,12 +25,12 @@
     <div class="menu-inicio">
         <h1>Turismo Viajes</h1>
           
-              <ul>
-                  <li><a href="viajes">Viajes</a></li>
-                  <li><a href="nosotros">Nosotros</a></li>
-                  <li><a href="recomendaciones">Recomendaciones</a></li>
-                  <li><a href="contacto">Contacto</a></li>
-              </ul>
+        <ul>
+            <li><a href="{% url 'viajes' %}">Viajes</a></li>
+            <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+            <li><a href="{% url 'recomendaciones' %}">Recomendaciones</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+        </ul>
           
         </div>
 </header>    
@@ -44,7 +41,8 @@
             <article class="recomendacion"> 
                 <figure class="foto">
                     <section class="carrusel">
-                        <img src="img/Recomendaciones/pedroandrada.jpg">        
+                        <img src="{% static 'img/Recomendaciones/pedroandrada.jpg' %}" alt="My image">
+                               
                       </section> 
                         <h2>Pedro Andrada</h2>
                         <p class="contorno-p">Lo que distingue a TURISMO VIAJES es su enfoque integral y detallado en la planificación 
@@ -58,7 +56,8 @@
             <article class="recomendacion" >
                 <figure class="foto">
                     <section class="carrusel">
-                        <img src="img/Recomendaciones/lauragomez.png">        
+                        <img src="{% static 'img/Recomendaciones/lauragomez.png' %}" alt="My image">
+                           
                       </section> 
                     <div class="contenido">
                         <h2>Laura Gomez</h2>
@@ -74,7 +73,8 @@
             <article class="recomendacion">
                 <figure class="foto">
                     <section class="carrusel">
-                        <img src="img/Recomendaciones/pedrogonzalez.jpg">        
+                        <img src="{% static 'img/Recomendaciones/pedrogonzalez.jpg' %}" alt="My image">
+                                
                       </section> 
                     <div class="contenido">
                         <h2>Pedro Gonzalez</h2>
@@ -90,7 +90,8 @@
             <article class="recomendacion">
                 <figure class="foto">
                     <section class="carrusel">
-                        <img src="img/Recomendaciones/mariaschulls.png">        
+                        <img src="{% static 'img/Recomendaciones/mariaschulls.png' %}" alt="My image">
+                               
                       </section>
                     <div class="contenido">
                         <h2>Maria Schulls</h2>
@@ -107,7 +108,8 @@
             <article class="recomendacion">
                 <figure class="foto">
                     <section class="carrusel">
-                        <img src="img/Recomendaciones/jorgenegredo.jpg">        
+                        <img src="{% static 'img/Recomendaciones/jorgenegredo.jpg' %}" alt="My image">
+                               
                       </section>
                     <div class="contenido">
                         <h2>Jorge Negredo</h2>
@@ -124,7 +126,8 @@
             <article class="recomendacion">
                 <figure class="foto">
                     <section class="carrusel">
-                        <img src="img/Recomendaciones/juanmontenegro.jpg">        
+                        <img src="{% static 'img/Recomendaciones/juanmontenegro.jpg' %}" alt="My image">
+                               
                       </section> 
                     <div class="contenido">
                         <h2>Juan Montenegro</h2>
@@ -139,7 +142,8 @@
             <article class="recomendacion">
                 <figure class="foto">
                     <section class="carrusel">
-                        <img src="img/Recomendaciones/robertoperez.jpg">        
+                        <img src="{% static 'img/Recomendaciones/robertoperez.jpg' %}" alt="My image">
+                             
                       </section> 
                     <div class="contenido">
                         <h2>Roberto Perez</h2>

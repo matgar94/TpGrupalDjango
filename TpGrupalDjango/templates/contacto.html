@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/travel.ico">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
-    <link rel="stylesheet" href="css/estilo.css">
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="/img/travel.ico">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}" >
+    
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
@@ -18,10 +20,10 @@
             <h1>Turismo Viajes</h1>
               
                   <ul>
-                      <li><a href="">Viajes</a></li>
-                      <li><a href="nosotros">Nosotros</a></li>
-                      <li><a href="recomendaciones">Recomendaciones</a></li>
-                      <li><a href="contacto">Contacto</a></li>
+                      <li><a href="{% url 'viajes' %}">Viajes</a></li>
+                      <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+                      <li><a href="{% url 'recomendaciones' %}">Recomendaciones</a></li>
+                      <li><a href="{% url 'contacto' %}">Contacto</a></li>
                   </ul>
               
             </div>

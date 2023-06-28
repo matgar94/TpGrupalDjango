@@ -24,10 +24,9 @@ from TpGrupalDjango.views import nosotros
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', viajes),
+    path('', home),
     path('viajes/', viajes),
-    
-    path('viajes/recomendaciones', recomendaciones),
-    path('viajes/nosotros', nosotros),
-    path('viajes/contacto', contacto),
+    path('recomendaciones/', recomendaciones),
+    path('nosotros/', nosotros),
+    path('contacto/', contacto),
 ]

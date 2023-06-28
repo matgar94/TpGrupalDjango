@@ -16,12 +16,12 @@
   <header>
         <div class="menu-inicio">
           <h1>Turismo Viajes</h1>
-                <ul>
-                    <li><a href="viajes">Viajes</a></li>
-                    <li><a href="nosotros">Nosotros</a></li>
-                    <li><a href="recomendaciones">Recomendaciones</a></li>
-                    <li><a href="contacto">Contacto</a></li>
-                </ul>
+          <ul>
+            <li><a href="">Viajes</a></li>
+            <li><a href="nosotros/">Nosotros</a></li>
+            <li><a href="recomendaciones">Recomendaciones</a></li>
+            <li><a href="contacto">Contacto</a></li>
+        </ul>
           </div>
         </header>
 <main>
@@ -73,11 +73,13 @@
           </div> 
           <br>
             <section class="carrusel">
-              <img src="img/Viajes/Cancun/cancun1.jpg">        
-              <img src="img/Viajes/Cancun/cancun2.jpg">
-              <img src="img/Viajes/Cancun/cancun3.jpg">
-              <img src="img/Viajes/Cancun/cancun4.jpg">
-              <img src="img/Viajes/Cancun/cancun5.jpg">
+              {% load static %}
+          <img src="{% static 'img/Viajes/Cancun/cancun1.jpg' %}" alt="My image">
+          <img src="{% static 'img/Viajes/Cancun/cancun2.jpg' %}" alt="My image">
+          <img src="{% static 'img/Viajes/Cancun/cancun3.jpg' %}" alt="My image">
+          <img src="{% static 'img/Viajes/Cancun/cancun4.jpg' %}" alt="My image">
+          <img src="{% static 'img/Viajes/Cancun/cancun5.jpg' %}" alt="My image">
+          
             </section> 
           </div> 
           <div class="separador"></div> 

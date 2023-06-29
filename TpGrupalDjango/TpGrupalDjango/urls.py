@@ -21,6 +21,7 @@ from TpGrupalDjango.views import viajes
 from TpGrupalDjango.views import recomendaciones
 from TpGrupalDjango.views import contacto
 from TpGrupalDjango.views import nosotros
+from TpGrupalDjango import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),

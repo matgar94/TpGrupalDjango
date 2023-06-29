@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes</title>
-    <link rel="icon" type="image/x-icon" href="img/travel.ico">
+    
     {% load static %}
+          <link rel="icon" type="image/x-icon" href="{% static 'img/travel.ico' %}" >
           <link rel="stylesheet" href="{% static 'css/estilo.css' %}" >
           <link rel="stylesheet" href="{% static 'css/boton.css' %}" >
-          <link rel="stylesheet" href="{% static 'css/moveralcarrito.css' %}">  
-          <script src="{% static 'js/carritodecompras.js' %}">
-          <script src="js/carritodecompras.js"></script>
+          <link rel="stylesheet" href="{% static 'css/moveralcarrito.css' %}"> 
+         
+          
     
 </head>
 <body background="img/Fondo.jpg">
@@ -214,7 +215,10 @@
   <h4 style="color: blue;">Telefono: 011 456 45556</h4> &nbsp;
   <h4 style="color: blue;">contact@turismoviajes.com</h4>
 </footer> 
-
+ 
 
 </body>
+{% load static %}
+<script src="{% static 'js/tiempo.js' %}"></script>
+          <script src="{% static '/js/carritodecompras.js' %}"></script>
 </html>
